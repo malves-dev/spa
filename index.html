@@ -1,0 +1,35 @@
+<!doctype html>
+<html ng-app="spa">
+    <head>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular-route.min.js"></script>
+      <script src="js/controller.js"></script>
+      <script src="js/route.js"></script>
+    </head>
+    <body>
+
+    <!-- Caso não use http server, usar ng-template para acessar as htmls parcias
+      <script type="text/ng-template" id="partial/home.html">
+        <h1>Home</h1>
+        <h3>{{message}}</h3>
+      </script>
+      <script type="text/ng-template" id="partial/blog.html">
+        <h1>Blog</h1>
+        <h3>{{message}}</h3>
+      </script>
+      <script type="text/ng-template" id="partial/about.html">
+        <h1>About</h1>
+        <h3>{{message}}</h3>
+      </script>
+    -->
+
+    <a href="#/home">Home</a>
+    <a href="#/blog">Blog</a>
+    <a href="#/about">About</a>
+
+    <section>
+      <div ng-view></div>
+    </section>
+
+  </body>
+</html>
