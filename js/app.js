@@ -32,6 +32,7 @@ app.controller('Blog', function($scope) {
 
 app.controller('About', function($scope) {
   $scope.titulo = 'Hello from About';
+  $scope.about = {};
 });
 
 app.controller('Dashboard', function($scope) {
