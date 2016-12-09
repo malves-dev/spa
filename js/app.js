@@ -14,6 +14,10 @@ app.config(function($routeProvider) {
     templateUrl : 'partial/about.html',
     controller  : 'About'
   })
+  .when('/dashboard', {
+    templateUrl : 'partial/dashboard.html',
+    controller  : 'Dashboard'
+  })
   .otherwise({redirectTo: '/'});
 });
 
@@ -28,4 +32,8 @@ app.controller('Blog', function($scope) {
 
 app.controller('About', function($scope) {
   $scope.titulo = 'Hello from About';
+});
+
+app.controller('Dashboard', function($scope) {
+  $scope.titulo = 'Hello from Dashboard';
 });
