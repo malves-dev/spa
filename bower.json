@@ -1,0 +1,25 @@
+{
+  "name": "spa",
+  "homepage": "https://github.com/malves-dev/spa",
+  "authors": [
+    "Mario Sergio Alves <malves.dev@gmail.com>"
+  ],
+  "description": "SPA Simple Page Application",
+  "main": "index.html",
+  "keywords": [
+    "spa",
+    "angular"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.6.0",
+    "angular-route": "^1.6.0"
+  }
+}

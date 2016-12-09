@@ -10,30 +10,11 @@
     </head>
     <body>
 
-    <!-- Caso não use http server, usar ng-template para acessar as htmls parcias
-      <script type="text/ng-template" id="partial/home.html">
-        <h1>Home</h1>
-        <h3>{{titulo}}</h3>
-      </script>
-      <script type="text/ng-template" id="partial/blog.html">
-        <h1>Blog</h1>
-        <h3>{{titulo}}</h3>
-      </script>
-      <script type="text/ng-template" id="partial/about.html">
-        <h1>About</h1>
-        <h3>{{titulo}}</h3>
-      </script>
-    -->
-
-    <!-- <a href="#/home">Home</a>
-    <a href="#/blog">Blog</a>
-    <a href="#/about">About</a> -->
-
     <ul class="nav nav-tabs">
          <li ng-class="{active: activetab == '/home'}"><a href="#/home">Home</a></li>
          <li ng-class="{active: activetab == '/blog'}"><a href="#/blog">Blog</a></li>
-         <li ng-class="{active: activetab == '/about'}"><a href="#/about">About</a></li>
          <li ng-class="{active: activetab == '/dashboard'}"><a href="#/dashboard">Dashboard</a></li>
+         <li ng-class="{active: activetab == '/about'}"><a href="#/about">About</a></li>
     </ul>
 
     <section>
