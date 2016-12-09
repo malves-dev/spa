@@ -1,31 +1,31 @@
-var app = angular.module('myApp', ['ngRoute']);
+var app = angular.module('spa', ['ngRoute']);
 
 app.config(function($routeProvider) {
   $routeProvider
   .when('/home', {
     templateUrl : 'partial/home.html',
-    controller  : 'HomeController'
+    controller  : 'Home'
   })
   .when('/blog', {
     templateUrl : 'partial/blog.html',
-    controller  : 'BlogController'
+    controller  : 'Blog'
   })
   .when('/about', {
     templateUrl : 'partial/about.html',
-    controller  : 'AboutController'
+    controller  : 'About'
   })
   .otherwise({redirectTo: '/'});
 });
 
 // Controllers
-app.controller('HomeController', function($scope) {
-  $scope.message = 'Hello from HomeController';
+app.controller('Home', function($scope) {
+  $scope.titulo = 'Hello from Home';
 });
 
-app.controller('BlogController', function($scope) {
-  $scope.message = 'Hello from BlogController';
+app.controller('Blog', function($scope) {
+  $scope.titulo = 'Hello from Blog';
 });
 
-app.controller('AboutController', function($scope) {
-  $scope.message = 'Hello from AboutController';
+app.controller('About', function($scope) {
+  $scope.titulo = 'Hello from About';
 });
