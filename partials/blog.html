@@ -1,3 +1,20 @@
-<h1>Blog</h1>
 
-<h3>{{titulo}}</h3>
+<div class="container">
+  <h3>{{titulo}}</h3>
+  <div class="media" ng-repeat="post in blog">
+    <div class="media-left media-top">
+      <img src="{{post.avatar}}" class="media-object" style="width:60px">
+    </div>
+    <div class="media-body">
+      <h4 class="media-heading">{{post.author}}, Age: {{post.age}}, City: {{post.city}}, Country: {{post.country}}</h4>
+      <div class="comments">
+          <h4>Comments</h4>
+          <ul>
+           <li ng-repeat="comment in post.post">
+             <cite>- <b>{{comment.comments}}</b></cite>
+           </li>
+          </ul>
+      </div>
+    </div>
+  </div>
+</div>
