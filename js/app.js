@@ -1,40 +1,24 @@
-var app = angular.module('spa', ['ngRoute']);
+var spa =angular.module('spa', ['ngRoute', 'controllers']);
 
-app.config(function($routeProvider) {
+spa.config(function($routeProvider) {
   $routeProvider
   .when('/home', {
-    templateUrl : 'partial/home.html',
+    templateUrl : 'partials/home.html',
     controller  : 'Home'
   })
   .when('/blog', {
-    templateUrl : 'partial/blog.html',
+    templateUrl : 'partials/blog.html',
     controller  : 'Blog'
   })
   .when('/about', {
-    templateUrl : 'partial/about.html',
+    templateUrl : 'partials/about.html',
     controller  : 'About'
   })
   .when('/dashboard', {
-    templateUrl : 'partial/dashboard.html',
+    templateUrl : 'partials/dashboard.html',
     controller  : 'Dashboard'
   })
-  .otherwise({redirectTo: '/'});
-});
-
-// Controllers
-app.controller('Home', function($scope) {
-  $scope.titulo = 'Hello from Home';
-});
-
-app.controller('Blog', function($scope) {
-  $scope.titulo = 'Hello from Blog';
-});
-
-app.controller('About', function($scope) {
-  $scope.titulo = 'Hello from About';
-  $scope.about = {};
-});
-
-app.controller('Dashboard', function($scope) {
-  $scope.titulo = 'Hello from Dashboard';
+  .otherwise({
+    redirectTo : '/'}
+  );
 });
