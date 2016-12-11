@@ -10,3 +10,12 @@
 
 * Blog
 * Dashboard
+
+#### Prerequisits
+
+* Nodejs
+
+#### Installation
+
+* npm i bower -g
+* bower install
