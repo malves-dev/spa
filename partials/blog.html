@@ -1,20 +1,32 @@
 
 <div class="container">
-  <h3>{{titulo}}</h3>
+  <h2 class="jumbotron" style="background-color:#00F3FF">{{titulo}}</h2>
+  <hr>
+  <hr>
   <div class="media" ng-repeat="post in blog">
     <div class="media-left media-top">
-      <img src="{{post.avatar}}" class="media-object" style="width:60px">
+      <img src="/image/{{post.avatar}}" class="media-object" style="width:60px">
     </div>
+
     <div class="media-body">
       <h4 class="media-heading">{{post.author}}, Age: {{post.age}}, City: {{post.city}}, Country: {{post.country}}</h4>
       <div class="comments">
           <h4>Comments</h4>
           <ul>
            <li ng-repeat="comment in post.post">
-             <cite>- <b>{{comment.comments}}</b></cite>
+             <cite><b>{{comment.comments}}</b></cite>
            </li>
           </ul>
       </div>
     </div>
+    <hr>
   </div>
+
+  <h3>Your Comments</h3>
+  <form>
+    <div class="form-group">
+      <textarea class="form-control" ng-model="comments" id="comments" placeholder="Your Comments..."></textarea>
+    </div>
+    <button type="submit" class="btn btn-default">Submit</button>
+  </form>
 </div>

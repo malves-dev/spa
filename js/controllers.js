@@ -6,7 +6,7 @@ controllers.controller('Home', function($scope){
 });
 
 controllers.controller('Blog', function($scope){
-  $scope.titulo = 'Political Blog';
+  $scope.titulo = 'Political systems around the world';
   $scope.blog = [
     {
       id : 1,
@@ -14,7 +14,7 @@ controllers.controller('Blog', function($scope){
       age : 31,
       country : 'Brasil',
       city : 'Bauru',
-      avatar : 'image/avatar1.png',
+      avatar : 'avatar5.png',
       post : [
             {
             date : new Date ('December 5, 2016'),
@@ -29,7 +29,7 @@ controllers.controller('Blog', function($scope){
       age : 40,
       country : 'Brasil',
       city : 'Cuiabá',
-      avatar : 'image/avatar2.png',
+      avatar : 'avatar2.png',
       post : [
             {
             date : new Date ('December 8 , 2016'),
@@ -44,7 +44,7 @@ controllers.controller('Blog', function($scope){
       age : 26,
       country : 'Canada',
       city : 'Vancuver',
-      avatar : 'image/avatar3.png',
+      avatar : 'avatar3.png',
       post : [
             {
             date : new Date ('December 1, 2016'),
@@ -59,7 +59,7 @@ controllers.controller('Blog', function($scope){
       age : 36,
       country : 'USA',
       city : 'New York',
-      avatar : 'image/avatar-women1.png',
+      avatar : 'avatar-women1.png',
       post : [
             {
             date : new Date ('December 1, 2016'),
