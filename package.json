@@ -1,0 +1,32 @@
+{
+  "name": "WebBlog",
+  "version": "1.0.0",
+  "description": "Blog with Angular Single Page Application",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/malves-dev/spa.git"
+  },
+  "keywords": [
+    "spa",
+    "angular"
+  ],
+  "author": "malves.dev@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/malves-dev/spa/issues"
+  },
+  "homepage": "https://github.com/malves-dev/spa#readme",
+  "dependencies": {
+    "mongoose": "^4.7.2"
+  },
+  "devDependencies": {
+    "jasmine-core": "^2.5.2",
+    "karma": "^1.3.0",
+    "karma-chrome-launcher": "^2.0.0",
+    "karma-jasmine": "^1.1.0"
+  }
+}
