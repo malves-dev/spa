@@ -17,5 +17,22 @@
 
 #### Installation
 
-* npm i bower -g
-* bower install
+~~~
+>npm i bower -g
+~~~
+~~~
+>npm i http-server -g
+~~~
+~~~
+>bower install
+~~~
+
+#### Start Server
+
+~~~
+>http-server
+~~~
+
+#### SPA url Application
+
+[http://localhost:8080/#/home]('htpp://localhost:8080/#/home')
