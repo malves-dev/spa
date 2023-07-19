@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/malves-dev/spa#readme",
   "dependencies": {
-    "mongoose": "^4.7.2"
+    "mongoose": "^5.13.20"
   },
   "devDependencies": {
     "jasmine-core": "^2.5.2",
